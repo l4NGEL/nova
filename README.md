@@ -1,5 +1,7 @@
 # Ritim — Alışkanlık Takibi
 
+[![CI](https://github.com/l4NGEL/ritim/actions/workflows/ci.yml/badge.svg)](https://github.com/l4NGEL/ritim/actions/workflows/ci.yml)
+
 Kotlin + Jetpack Compose (Material 3) ile yazılmış, tamamen çevrimdışı çalışan Android alışkanlık takip uygulaması.
 Her alışkanlık bir galaksidir: tamamladığın her gün o galaksiye bir yıldız ekler, kazandığın puanlarla evrenine
 gezegenler ve nebulalar yerleştirir ya da kendine koyduğun gerçek ödülleri alırsın.
