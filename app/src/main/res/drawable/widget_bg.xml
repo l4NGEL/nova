@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Widget zemini: Evren sekmesindeki gece gökyüzü renkleri. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="24dp" />
+    <gradient
+        android:angle="315"
+        android:endColor="#FF2A0E3A"
+        android:centerColor="#FF16103F"
+        android:startColor="#FF0A0C26" />
+</shape>

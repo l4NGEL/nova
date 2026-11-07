@@ -21,6 +21,7 @@
 <p align="center">
   <a href="#-evren">Evren</a> ·
   <a href="#-oyun">Oyun</a> ·
+  <a href="#-ana-ekran-widgetı">Widget</a> ·
   <a href="#-ödüller-ve-seviyeler">Ödüller</a> ·
   <a href="#-takip">Takip</a> ·
   <a href="#-nasıl-çalışıyor">Nasıl çalışıyor</a> ·
@@ -64,6 +65,21 @@ Bu sayfadaki her şey cihazda, Canvas üzerinde perspektifle çizilir; görsel y
 - Pazar'a kadar yenersen +100 puan ve konfeti.
 
 **Günün görevleri.** Her sabah senin alışkanlıklarından üç görev çıkar: "3 alışkanlık tamamla", "Zor olanı hallet: Spor", "Su iç hedefini doldur", "Kusursuz gün", "Serini koru", "Geri dön: İngilizce"… Görevler gün içinde değişmez, her gün farklı gelir.
+
+<br clear="right"/>
+
+## 📱 Ana ekran widget'ı
+
+<img src="docs/16-widget.png" width="300" align="right" />
+
+Nova'yı açmadan da evrenine yıldız ekle.
+
+- **Bugünün alışkanlıkları** sırayla listelenir; düğmeye dokununca tamamlanır, sayılı hedeflerde +1 eklenir.
+- Gün ilerlemesi, harcanabilir puan ve seviye en üstte; büyük boyutta **haftanın canavarı** ve kalan canı da görünür.
+- Boyutu serbest: küçükken yalnız özet, genişleyince liste, uzayınca canavar.
+- Uygulamada, bildirimde ya da widget'ta ne değişirse diğerleri de hemen güncellenir; gün dönünce kendiliğinden yenilenir.
+
+Jetpack Glance ile yazıldı.
 
 <br clear="right"/>
 
@@ -115,6 +131,7 @@ domain/   Saf Kotlin: alışkanlık ve takvim, seri ve oran, puan kuralları, se
 data/     Room (habits, checks, rewards, redemptions, sky_objects; v1→v2→v3 göçleri),
           repository, JSON yedek, tercihler
 notify/   AlarmManager hatırlatmaları, bildirim eylemi, açılışta yeniden kurma
+widget/   Glance ana ekran widget'ı ve widget'tan işaretleme
 ui/       Compose ekranları ve ViewModel'ler, perspektifle çizilen 3B gökyüzü,
           gök cisimleri, kutlama katmanı
 ```

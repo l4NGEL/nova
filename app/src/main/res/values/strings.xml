@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Nova</string>
+    <string name="nova_widget_description">Bugünün alışkanlıkları, puanın ve haftanın canavarı. Alışkanlığını buradan işaretle.</string>
 </resources>

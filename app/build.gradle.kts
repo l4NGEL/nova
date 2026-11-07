@@ -54,6 +54,9 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.8.5")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
 
+    // Ana ekran widget'ı
+    implementation("androidx.glance:glance-appwidget:1.1.1")
+
     // Yerel veritabanı: alışkanlıklar ve günlük kayıtlar
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
