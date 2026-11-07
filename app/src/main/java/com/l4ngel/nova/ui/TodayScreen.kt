@@ -262,7 +262,7 @@ private fun SummaryCard(done: Int, due: Int) {
     val fraction = if (due == 0) 0f else done.toFloat() / due
     val (title, body) = when {
         due == 0 -> "Bugün dinlenme günü" to "Planlı alışkanlık yok; istersen yine de işaretleyebilirsin."
-        done == due -> "Hepsi tamam!" to "Bugünün tüm alışkanlıklarını bitirdin. Ritmi yakaladın."
+        done == due -> "Hepsi tamam!" to "Bugünün tüm alışkanlıklarını bitirdin. Evrenin bugün parladı."
         done == 0 -> "Güne başla" to "$due alışkanlık seni bekliyor. İlk adım en kolayı."
         fraction >= 0.5f -> "Yarıyı geçtin" to "${due - done} tane kaldı, bitiş çizgisi göründü."
         else -> "İyi gidiyor" to "$done / $due tamamlandı. Devam."
@@ -360,8 +360,8 @@ private fun Onboarding(onAdd: () -> Unit, onTemplate: (com.l4ngel.nova.domain.Ha
     Column(Modifier.fillMaxWidth().padding(top = 12.dp), horizontalAlignment = Alignment.CenterHorizontally) {
         EmptyHint(
             Icons.Rounded.AutoAwesome,
-            "Ritmini oluştur",
-            "Küçük ve düzenli adımlar büyük değişim getirir. Hazır bir alışkanlıkla başla ya da kendininkini oluştur.",
+            "Evrenini kur",
+            "Her alışkanlık gökyüzünde bir galaksi olur, tamamladığın her gün ona bir yıldız ekler. Hazır bir alışkanlıkla başla ya da kendininkini oluştur.",
         )
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally), verticalArrangement = Arrangement.spacedBy(4.dp)) {
             TEMPLATES.forEach { t ->

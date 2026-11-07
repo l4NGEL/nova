@@ -138,7 +138,7 @@ private fun LevelUpDialog(level: Level, onDismiss: () -> Unit) {
                 Text("Artık ${level.title} seviyesindesin.", style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
                 Spacer(Modifier.height(6.dp))
                 Text(
-                    "Sonraki seviye için ${level.span} puan gerekiyor. Ritmi bozma!",
+                    "Sonraki seviye için ${level.span} puan gerekiyor. Evrenin büyümeye devam etsin!",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     textAlign = TextAlign.Center,
