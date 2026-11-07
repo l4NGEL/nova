@@ -1,13 +1,13 @@
 <resources>
-    <style name="Theme.Ritim" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.Nova" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowBackground">@color/window_background</item>
     </style>
 
     <!-- Açılış ekranı: marka rengi zemin üstünde simge, sonra asıl temaya geçer. -->
-    <style name="Theme.Ritim.Starting" parent="Theme.SplashScreen">
+    <style name="Theme.Nova.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="postSplashScreenTheme">@style/Theme.Ritim</item>
+        <item name="postSplashScreenTheme">@style/Theme.Nova</item>
     </style>
 
     <color name="ic_launcher_background">#4E54C8</color>

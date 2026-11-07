@@ -1,26 +1,16 @@
-<!-- Simge: dörtte üçü dolu ilerleme halkası ve içinde onay işareti. 108dp güvenli alanın ortasında. -->
+<!-- Simge: Nova, doğan bir yıldız. Büyük dört kollu parıltı ve yanında iki küçük yıldız; 108dp güvenli alanın ortasında. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
     <path
-        android:pathData="M54,30a24,24 0,1 1,-24 24"
-        android:strokeWidth="7"
-        android:strokeLineCap="round"
-        android:strokeColor="#FFFFFFFF"
-        android:fillColor="#00000000" />
+        android:pathData="M52,26C53.6,42 58,48.4 74,50C58,51.6 53.6,58 52,74C50.4,58 46,51.6 30,50C46,48.4 50.4,42 52,26Z"
+        android:fillColor="#FFFFFFFF" />
     <path
-        android:pathData="M30,54a24,24 0,0 1,24 -24"
-        android:strokeWidth="7"
-        android:strokeLineCap="round"
-        android:strokeColor="#66FFFFFF"
-        android:fillColor="#00000000" />
+        android:pathData="M72,62C72.7,67.5 74.5,69.3 80,70C74.5,70.7 72.7,72.5 72,78C71.3,72.5 69.5,70.7 64,70C69.5,69.3 71.3,67.5 72,62Z"
+        android:fillColor="#CCFFFFFF" />
     <path
-        android:pathData="M43,55l7.5,7.5l15,-15"
-        android:strokeWidth="7"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeColor="#FFFFFFFF"
-        android:fillColor="#00000000" />
+        android:pathData="M70,30C70.4,33 71,33.6 74,34C71,34.4 70.4,35 70,38C69.6,35 69,34.4 66,34C69,33.6 69.6,33 70,30Z"
+        android:fillColor="#99FFFFFF" />
 </vector>

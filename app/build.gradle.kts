@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.l4ngel.ritim"
+    namespace = "com.l4ngel.nova"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.l4ngel.ritim"
+        applicationId = "com.l4ngel.nova"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

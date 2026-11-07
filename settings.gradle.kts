@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Ritim"
+rootProject.name = "Nova"
 include(":app")
