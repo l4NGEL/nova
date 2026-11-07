@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -160,6 +161,8 @@ class ToggleHabitAction : ActionCallback {
 private val WHITE = ColorProvider(Color.White)
 private val MUTED = ColorProvider(Color.White.copy(alpha = 0.65f))
 private val PEACH = ColorProvider(Color(0xFFFFB783))
+/** Widget zemininin ortası; halkanın içi zeminle aynı görünsün. */
+private val RING_INNER = Color(0xFF16103F)
 private val TRACK = ColorProvider(Color.White.copy(alpha = 0.14f))
 
 @Composable
@@ -254,20 +257,27 @@ private fun HabitRow(h: WidgetHabit) {
             if (h.detail.isNotEmpty()) Text(h.detail, style = TextStyle(color = MUTED, fontSize = 11.sp), maxLines = 1)
         }
         Spacer(GlanceModifier.width(8.dp))
+        // Yapılmamışken renkli halka ve soluk işaret: dokunulabilir olduğu ilk bakışta belli olsun.
+        // Halka iç içe iki daireyle çizilir; uzak görünümde çizgi kenarlığı yok.
+        val tap = actionRunCallback<ToggleHabitAction>(actionParametersOf(HABIT_KEY to h.id))
         Box(
-            GlanceModifier
-                .size(32.dp)
-                .cornerRadius(16.dp)
-                .background(if (h.done) color else color.copy(alpha = 0.22f))
-                .clickable(actionRunCallback<ToggleHabitAction>(actionParametersOf(HABIT_KEY to h.id))),
+            GlanceModifier.size(36.dp).cornerRadius(18.dp).background(color).padding(if (h.done) 0.dp else 2.5.dp).clickable(tap),
             contentAlignment = Alignment.Center,
         ) {
-            val label = when {
-                h.done -> "✓"
-                h.target > 1 -> "+1"
-                else -> ""
+            Box(
+                GlanceModifier.fillMaxSize().cornerRadius(16.dp).background(if (h.done) color else lerp(RING_INNER, color, 0.12f)),
+                contentAlignment = Alignment.Center,
+            ) {
+                Text(
+                    if (!h.done && h.target > 1) "+1" else "✓",
+                    style = TextStyle(
+                        color = if (h.done) WHITE else ColorProvider(lerp(color, Color.White, 0.35f).copy(alpha = if (h.target > 1) 1f else 0.6f)),
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                    ),
+                )
             }
-            Text(label, style = TextStyle(color = WHITE, fontSize = 13.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center))
         }
     }
 }
