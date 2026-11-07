@@ -1,17 +1,19 @@
 <p align="center">
-  <img src="docs/kapak.png" alt="Nova: Bugün ekranı, haftanın canavarı ve 3B evren" />
+  <img src="docs/kapak.png" alt="Nova: ana ekran widget'ı, Bugün ekranı, 3B evren ve Evren sekmesi" />
 </p>
 
 <p align="center">
   <b>Alışkanlıklarını takip et, evrenini büyüt.</b><br/>
   Her alışkanlık gökyüzünde bir galaksi; tamamladığın her gün ona yeni bir yıldız ekler.<br/>
-  Kazandığın puanlarla evrenine gezegenler kat, kendine koyduğun ödülleri al, haftanın canavarını alt et.
+  Kazandığın puanlarla evrenine gezegenler kat, kendine koyduğun ödülleri al, haftanın canavarını alt et.<br/>
+  Uygulamayı açmadan da ana ekrandaki widget'tan tik at.
 </p>
 
 <p align="center">
   <a href="https://github.com/l4NGEL/nova/actions/workflows/ci.yml"><img src="https://github.com/l4NGEL/nova/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <img src="https://img.shields.io/badge/Kotlin-2.1-7F52FF?logo=kotlin&logoColor=white" alt="Kotlin 2.1" />
   <img src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" />
+  <img src="https://img.shields.io/badge/Glance-ana%20ekran%20widget-6E56CF" alt="Glance widget" />
   <img src="https://img.shields.io/badge/Room-v3-0F9D58" alt="Room" />
   <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white" alt="Android 8.0+" />
   <img src="https://img.shields.io/badge/test-49%20birim%20testi-4E54C8" alt="49 birim testi" />
